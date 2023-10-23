@@ -58,6 +58,7 @@ form input {
     border: 1px solid lightgray;
     outline: none;
     border-radius: 8px;
+    width: 100%;
 }
 ::-webkit-input-placeholder {
     font-weight: 600;

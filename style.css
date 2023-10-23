@@ -1,112 +1,145 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 body {
-    width: 100vw;
-    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
     background-image: url("./images/bg-intro-desktop.png");
     background-color: hsl(0, 100%, 74%);
     background-size: cover;
+    background-position: center;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: #fff;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px 0;
+}
+article {
+    margin-left: 30px;
+    width: 500px;
+}
+article h1 {
+    font-size: 40px;
+    line-height: 40px;
+}
+article p {
+    margin-top: 30px;
+}
+section {
+    margin: 50px;
 }
 
 form {
+    border-radius: 12px;
     display: grid;
-    justify-content: center;
-    width: 100%;
-    position: relative;
-    left: 380px;
-    bottom: 100px;
+    box-shadow: 0 10px rgba(0, 0, 0, 0.17);
 }
-
-.block {
+.form-header {
     background: hsl(248, 32%, 49%);
     border-radius: 8px;
-    box-shadow: 10px 10px rgba(0, 0, 0, 0.17);
-    padding: 25px 60px;
+    box-shadow: 0 10px rgba(0, 0, 0, 0.17);
     margin: 20px 0;
     text-align: center;
-    width: 30vw;
+    height: 80px;
 }
-
-.border {
+.form-header p {
+    padding: 25px;
+}
+form, input {
     background: #fff;
-    width: 38vw;
-    border-radius: 8px;
-    height: 75vh;
-    box-shadow: 10px 10px rgba(0, 0, 0, 0.17);
-}
-
-input {
-    position: relative;
-    left: 15px;
-    width: 80%;
     padding: 20px;
-    margin: 20px;
-    border-radius: 5px;
-    font-weight: 700;
-    border-color: hsl(246, 25%, 77%);
+}
+form input {
+    border: 1px solid lightgray;
+    outline: none;
+    border-radius: 8px;
+}
+::-webkit-input-placeholder {
+    font-weight: 600;
+}
+form input:focus {
+    border: 1px solid hsl(248, 32%, 49%);
 }
 
-input:hover {
-    border-color: hsl(248, 32%, 49%);
-}
-
-button {
+form button {
     background: hsl(154, 59%, 51%);
     color: #fff;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    position: relative;
-    left: 8px;
-    width: 88%;
     padding: 20px;
-    margin: 25px;
     border-radius: 5px;
-    border: hsl(246, 25%, 77%)
+    border: hsl(246, 25%, 77%);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    font-weight: 600;
+    letter-spacing: 0.128rem;
 }
 
-.bottom-text {
+form p {
     color: hsl(246, 25%, 77%);
     text-align: center;
-    position: relative;
-    left: 45px;
-    bottom: 15px;
-    width: 50px;
+    padding: 10px 50px;
 }
 
 strong {
     color: hsl(0, 100%, 74%);
 }
-
-p,
-h1 {
-
-    display: flex;
-    justify-content: center;
-    position: relative;
-    top: 420px;
-    right: 320px;
-}
-
-p {
-    font-size: 20px;
-    position: relative;
-    top: 350px;
-    right: 290px;
-}
-
-h1 {
-    word-spacing: 10px;
-    font-size: 50px;
-    position: relative;
-    top: 330px;
-    right: 350px;
-}
-
-.attribution {
+footer {
     text-align: center;
+    padding: 20px;
 }
 
-@media screen and (max-width: 1440px) {
-    .border {
-        height: 75vh;
+footer a {
+    color: hsl(248, 32%, 49%);
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        background-image: url("./images/bg-intro-mobile.png");
+        flex-direction: column;
+        margin: 50px 0;
+    } 
+    .container {
+        flex-direction: column;
+        padding: 20px;
+    }
+    article {
+        padding: 30px;
+        text-align: center;
+        margin-left: 0;
+        width: auto;
+    }
+    article h1 {
+        font-size: 30px;
+        margin: 0 30px;
+    }
+    article p {
+        margin: 30px 10px;
+        width: auto;
+    }
+    section {
+        margin: 0 auto;
+    }
+    
+}
+@media screen and (max-width: 475px) {
+    .form-header p {
+        padding: 20px 50px;
+    }
+    article {
+        margin-left: 0;
+        padding: 0;
+    }
+    article h1 {
+        margin: 0 10px;
+    }
+    article p {
+        width: auto;
+    }
+    form p {
+        padding: 10px 20px;
     }
 }

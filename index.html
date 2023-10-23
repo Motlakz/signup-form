@@ -5,40 +5,41 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css">
-
+  <link rel="stylesheet" href="./style.css">
   <title>Frontend Mentor | Intro component with sign up form</title>
 </head>
 
 <body>
+  <main class="container">
+    <article>
+    <h1>Learn to code by watching others</h1>
 
-  <h1>Learn to code by<br /> watching others</h1>
+    <p>See how experienced developers solve problems in real-time.
+      Watching scripted tutorials is great, but understanding how
+      developers think is invaluable.</p>
+  </article>
 
-  <p>See how experienced developers solve problems in real-time.<br />
-    Watching scripted tutorials is great, but understanding how <br />
-    developers think is invaluable.</p>
-  <form>
-    <div class="container">
-      <div class="block">
-        <text><b>Try it free 7 days</b> then $20/mo. thereafter</text>
-      </div>
-      <div class="border">
-        <br />
-        <input type="text" name="name" id="firstname" class="form-creation" placeholder="First Name" required />
-        <br />
-        <input type="text" name="name" id="lastname" class="form-creation" placeholder="Last Name" required />
-        <br />
-        <input type="email" name="email" id="email" class="form-creation" placeholder="me@example.com" required />
-        <br />
-        <input type="password" name="psw" id="password" class="form-creation" placeholder="Password" required />
-        <br />
-        <button type="submit">CLAIM YOUR FREE TRIAL</button>
-        <br />
-        <text class="bottom-text">By clicking the button, you are agreeing to our <strong>Terms and
-            Services</strong></text>
-      </div>
-    </div>
-  </form>
+  <section>
+    <header class="form-header">
+      <p><b>Try it free 7 days</b> then $20/mo. thereafter</p>
+    </header>
+    
+    <form>
+          <input type="text" name="name" id="firstname" class="form-creation" placeholder="First Name" required />
+          <br />
+          <input type="text" name="name" id="lastname" class="form-creation" placeholder="Last Name" required />
+          <br />
+          <input type="email" name="email" id="email" class="form-creation" placeholder="me@example.com" required />
+          <br />
+          <input type="password" name="psw" id="password" class="form-creation" placeholder="Password" required />
+          <br />
+          <button type="submit">CLAIM YOUR FREE TRIAL</button>
+          <br />
+          <p class="bottom-text">By clicking the button, you are agreeing to our <strong>Terms and
+              Services</strong></p>
+    </form>
+  </section>
+  </main>
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.

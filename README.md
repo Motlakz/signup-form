@@ -5,4 +5,4 @@
 ## Welcome! 👋
 
 Thanks for checking out this front-end coding challenge.
-I will use HTML and CSS to build a form and attempt to make it responsive
+I will use HTML and CSS to build a form and attempt to make it responsive.
